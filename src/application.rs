@@ -1,12 +1,19 @@
-pub trait Application {
-    fn run() {
+use crate::event;
+
+pub struct Application {
+    pub event_queue: Vec<event::EventTypes>,
+}
+
+impl Application {
+    pub fn run(&self) {
         loop {
             continue;
         }
     }
 
-    fn init() -> (Vec<crate::event::EventTypes>) {
-        crate::logger::init();
-        crate::event::init()
+    pub fn new() -> Application {
+        Application {
+            event_queue: event::init(),
+        }
     }
 }
