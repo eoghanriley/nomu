@@ -1,9 +1,9 @@
 [package]
-name = "gneiss"
+name = "nomu"
 version = "0.1.0"
 edition = "2021"
 categories = ["game-engines", "graphics", "rendering", "gui"]
-description = "A game engine and framework written in Rust"
+description = "A game engine written in Rust"
 license = "GPLv3"
 readme = "README.md"
 repository = "https://github.com/eoghanriley/gneiss"
@@ -14,6 +14,9 @@ repository = "https://github.com/eoghanriley/gneiss"
 env_logger = "0.10.0"
 log = "0.4.17"
 thiserror = "1.0.38"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
 
 [profile.dev]
 opt-level = 0
