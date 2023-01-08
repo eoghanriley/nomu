@@ -1,3 +1,3 @@
-# gneiss
+# nomu
 
-A game engine and framework written in Rust
+A game engine written in Rust
