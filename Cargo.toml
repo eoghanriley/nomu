@@ -14,6 +14,8 @@ repository = "https://github.com/eoghanriley/gneiss"
 env_logger = "0.10.0"
 log = "0.4.17"
 thiserror = "1.0.38"
+wgpu = "0.14.2"
+winit = "0.27.5"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
